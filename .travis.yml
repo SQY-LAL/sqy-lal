@@ -7,8 +7,6 @@ script:
   - echo "Bonjour"
 # configure notifications (email, IRC, campfire etc)
 notifications:
-  slack:
-    rooms:
-      - asisqy:xoxp-819361314902-810295244643-815878057825-6eea60857271c99406c47d0974603127#git-test
+  slack: asisqy:oMbU0Diuuu7K7hI0xQzahyqp
     on_success: always
     on_failure: always
