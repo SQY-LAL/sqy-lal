@@ -1,28 +1,10 @@
 # see http://about.travis-ci.org/docs/user/languages/php/ for more hints
-language: php
+language: python
+python:
+  - "3.7"
 
-# list any PHP version you want to test against
-php:
-  # using major version aliases
-  - 7.0
-
-# optionally specify a list of environments, for example to test different RDBMS
-env:
-  - DB=mysql
-  - DB=pgsql
-
-# optionally set up exclusions and allowed failures in the matrix
-matrix:
-  exclude:
-    - php: hhvm
-      env: DB=pgsql  # PDO driver for pgsql is unsupported by HHVM (3rd party install for support)
-
-# execute any number of scripts before the test run, custom env's are available as variables
-before_script:
-  - if [[ "$DB" == "pgsql" ]]; then echo "helloworld"; fi
-
-# omitting "script:" will default to phpunit
-
+script:
+  - echo "Bonjour"
 # configure notifications (email, IRC, campfire etc)
 notifications:
   slack: '<j.empereur>:<xoxp-819361314902-810295244643-825959359254-ac58d5e1d419cc73b9b0bd3be49b7b48>#git-test'
