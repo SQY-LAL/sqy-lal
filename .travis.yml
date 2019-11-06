@@ -9,6 +9,6 @@ script:
 notifications:
   slack:
     rooms:
-      - asisqy:ayc0IYxYggGj2YkJ4kcxK4ZJ#git-test
+      - asisqy:xoxp-819361314902-810295244643-815878057825-6eea60857271c99406c47d0974603127#git-test
     on_success: always
-    on_failure: always 
+    on_failure: always
